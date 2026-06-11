@@ -15,8 +15,6 @@ package model;
  * O "Golpe do Boleto Falso" funciona exatamente na lacuna entre
  * o que o pagador VÊ (dados visuais do papel) e para onde o
  * dinheiro REALMENTE vai (metadados reais da conta bancária).
- * 
- * O que um golpista pode fazer?
  *
  * Um golpista pode:
  *  1. Interceptar um boleto legítimo de uma concessionária (CNPJ).
@@ -28,10 +26,17 @@ package model;
  * As duas travas do BancoController atacam exatamente isso:
  *  - Trava 1 (Hash): detecta qualquer alteração no boleto.
  *  - Trava 2 (Modalidade): detecta divergência PJ → PF mesmo
-*/
-
+ *    que o hash tenha sido re-gerado pelo fraudador.
+ */
 public class Boleto {
 
+    // -------------------------------------------------------
+    // Enum de Status — rastreia o ciclo de vida do boleto
+    // -------------------------------------------------------
+
+    /**
+     * Define os possíveis estados de um boleto no sistema.
+     */
     public enum Status {
         /** Estado inicial: boleto gerado, aguardando pagamento. */
         PENDENTE,
