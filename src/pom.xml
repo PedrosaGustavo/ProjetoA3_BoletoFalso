@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ============================================================ -->
+    <!-- INFORMAÇÕES DO PROJETO                                       -->
+    <!-- ============================================================ -->
+
+    <groupId>com.banco.antifrau</groupId>
+    <artifactId>projeto-a3-boleto-falso</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>Projeto A3 - Combate ao Golpe do Boleto Falso</name>
+    <description>
+        Sistema bancário com proteção criptográfica contra fraude de boletos falsos
+        usando SHA-256 e validação de modalidade/identidade em duas camadas.
+    </description>
+
+    <!-- ============================================================ -->
+    <!-- PROPRIEDADES DO PROJETO                                      -->
+    <!-- ============================================================ -->
+
+    <properties>
+        <!-- Versão do Java alvo para compilação e execução -->
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+
+        <!-- Encoding do projeto (UTF-8) -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Versões das dependências de teste -->
+        <junit.version>4.13.2</junit.version>
+        <hamcrest.version>1.3</hamcrest.version>
+    </properties>
+
+    <!-- ============================================================ -->
+    <!-- DEPENDÊNCIAS                                                 -->
+    <!-- ============================================================ -->
+
+    <dependencies>
+
+        <!-- ======================================================== -->
+        <!-- JUnit 4 — Framework de testes unitários                  -->
+        <!-- ======================================================== -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+            <description>
+                JUnit 4 fornece anotações (@Test, @Before, @After, @BeforeClass, @AfterClass)
+                e assertions para testes unitários. Escopo "test" significa que só está
+                disponível durante compilação/execução de testes, não na aplicação produção.
+            </description>
+        </dependency>
+
+        <!-- ======================================================== -->
+        <!-- Hamcrest — Matcher library para assertions fluentes      -->
+        <!-- ======================================================== -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>${hamcrest.version}</version>
+            <scope>test</scope>
+            <description>
+                Hamcrest oferece matchers mais expressivos e legíveis que assertEquals().
+                Ex: assertThat(status, is(PAGO)) em lugar de assertEquals(status, PAGO).
+                Dependência transitiva do JUnit, incluída aqui explicitamente.
+            </description>
+        </dependency>
+
+    </dependencies>
+
+    <!-- ============================================================ -->
+    <!-- PLUGINS DE BUILD                                             -->
+    <!-- ============================================================ -->
+
+    <build>
+        <plugins>
+
+            <!-- Plugin Maven Compiler — configura compilação Java -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- Plugin Maven Surefire — executa testes unitários -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M9</version>
+                <configuration>
+                    <!-- Padrão de nomes dos testes a executar -->
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/*Tests.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <!-- Plugin Maven JAR — empacota a aplicação -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.2</version>
+                <configuration>
+                    <!-- Define a classe principal para execução com java -jar -->
+                    <archive>
+                        <manifest>
+                            <mainClass>test.SegurancaServiceTest</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!-- Plugin Maven Assembly — cria JAR executável com dependências -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <mainClass>test.SegurancaServiceTest</mainClass>
+                                </manifest>
+                            </archive>
+                            <descriptorRefs>
+                                <descriptorRef>jar-with-dependencies</descriptorRef>
+                            </descriptorRefs>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
