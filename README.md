@@ -42,94 +42,6 @@ ProjetoA3/
 ├── build.gradle                           # Configuração Gradle
 └── README.md                              # Este arquivo
 ```
-
----
-
-## 🔧 Setup do Projeto
-
-### Opção 1: Maven (Recomendado)
-
-#### 1.1 Instalar Maven
-```bash
-# Ubuntu/Debian
-sudo apt-get install maven
-
-# macOS
-brew install maven
-
-# Windows
-# Baixar em: https://maven.apache.org/download.cgi
-```
-
-#### 1.2 Compilar e Testar
-```bash
-# Navega para o diretório do projeto
-cd ProjetoA3
-
-# Compila todo o projeto
-mvn clean compile
-
-# Roda os testes JUnit
-mvn test
-
-# Compila + testes + empacota em JAR
-mvn clean package
-
-# Roda a aplicação
-java -cp target/projeto-a3-boleto-falso-1.0.0.jar test.SegurancaServiceTest
-```
-
-### Opção 2: Gradle
-
-#### 2.1 Instalar Gradle
-```bash
-# Ubuntu/Debian
-sudo apt-get install gradle
-
-# macOS
-brew install gradle
-
-# Windows
-# Baixar em: https://gradle.org/install/
-```
-
-#### 2.2 Compilar e Testar
-```bash
-cd ProjetoA3
-
-# Compila e roda testes
-gradle build
-
-# Apenas testes
-gradle test
-
-# Gera JAR executável
-gradle jar
-
-# Executa a aplicação
-gradle run
-```
-
-### Opção 3: Compilação Manual (Sem Maven/Gradle)
-
-```bash
-cd ProjetoA3/src
-
-# Compilar todas as classes
-javac model/EmpresaEmissora.java model/Boleto.java \
-      service/SegurancaService.java \
-      controller/BancoController.java \
-      test/SegurancaServiceTest.java \
-      test/SegurancaServiceJUnitTest.java
-
-# Executar testes simples (com método main)
-java test.SegurancaServiceTest
-
-# Para rodar os testes JUnit sem Maven/Gradle, você precisaria
-# baixar os JARs do JUnit e Hamcrest manualmente e adicionar
-# ao classpath — mais complexo, não recomendado.
-```
-
 ---
 
 ## 🧪 Testes Incluídos
@@ -318,7 +230,7 @@ System.out.println(resultado);
 
 ---
 
-## 📚 Apêndice: Tecnologias Utilizadas
+## 📚 Tecnologias Utilizadas
 
 | Componente | Versão | Descrição |
 |------------|--------|-----------|
@@ -388,7 +300,7 @@ Este projeto é fornecido como material educacional. Sinta-se livre para usar, m
 
 ---
 
-## 👨‍💼 Autor
+## 👨‍💼 Lucas Matheus
 
 **Desenvolvido como análise de engenharia de software** para demonstração de boas práticas em:
 - Design seguro de sistemas bancários
@@ -396,5 +308,5 @@ Este projeto é fornecido como material educacional. Sinta-se livre para usar, m
 - Testes unitários com JUnit
 - Automação de build
 
-**Data**: Junho de 2024
+**Data**: Junho de 2026
 **Versão**: 1.0.0
