@@ -26,8 +26,8 @@
 
     <properties>
         <!-- Versão do Java alvo para compilação e execução -->
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
 
         <!-- Encoding do projeto (UTF-8) -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -51,11 +51,6 @@
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
-            <description>
-                JUnit 4 fornece anotações (@Test, @Before, @After, @BeforeClass, @AfterClass)
-                e assertions para testes unitários. Escopo "test" significa que só está
-                disponível durante compilação/execução de testes, não na aplicação produção.
-            </description>
         </dependency>
 
         <!-- ======================================================== -->
@@ -66,11 +61,6 @@
             <artifactId>hamcrest-core</artifactId>
             <version>${hamcrest.version}</version>
             <scope>test</scope>
-            <description>
-                Hamcrest oferece matchers mais expressivos e legíveis que assertEquals().
-                Ex: assertThat(status, is(PAGO)) em lugar de assertEquals(status, PAGO).
-                Dependência transitiva do JUnit, incluída aqui explicitamente.
-            </description>
         </dependency>
 
     </dependencies>
@@ -86,7 +76,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.11.0</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
@@ -98,7 +88,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M9</version>
+                <version>3.0.0</version>
                 <configuration>
                     <!-- Padrão de nomes dos testes a executar -->
                     <includes>
