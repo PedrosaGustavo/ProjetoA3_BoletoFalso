@@ -1,0 +1,5 @@
+controller\BancoController.class
+service\SegurancaService.class
+model\EmpresaEmissora.class
+model\Boleto$Status.class
+model\Boleto.class

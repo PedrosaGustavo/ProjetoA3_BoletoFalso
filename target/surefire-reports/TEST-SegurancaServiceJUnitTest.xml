@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="SegurancaServiceJUnitTest" time="2.861" tests="13" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\lucas\ProjetoA3_BoletoFalso\target\test-classes;C:\Users\lucas\ProjetoA3_BoletoFalso\target\classes;C:\Users\lucas\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\lucas\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\lucas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Users\lucas\AppData\Local\Programs\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\lucas\AppData\Local\Temp\surefire5039342130557030357\surefirebooter-20260618191504156_3.jar C:\Users\lucas\AppData\Local\Temp\surefire5039342130557030357 2026-06-18T19-15-02_382-jvmRun1 surefire-20260618191504156_1tmp surefire_0-20260618191504156_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\lucas\ProjetoA3_BoletoFalso\target\test-classes;C:\Users\lucas\ProjetoA3_BoletoFalso\target\classes;C:\Users\lucas\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\lucas\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\lucas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\lucas"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Users\lucas\AppData\Local\Programs\Eclipse Adoptium\jdk-25.0.3.9-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\lucas\ProjetoA3_BoletoFalso"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\lucas\AppData\Local\Temp\surefire5039342130557030357\surefirebooter-20260618191504156_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.3+9-LTS"/>
+    <property name="user.name" value="lucas"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-25.0.3+9"/>
+    <property name="localRepository" value="C:\Users\lucas\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\lucas\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.3"/>
+    <property name="user.dir" value="C:\Users\lucas\ProjetoA3_BoletoFalso"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\lucas\AppData\Local\Programs\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\lucas\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\lucas\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\lucas\AppData\Local\Programs\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin;C:\Users\lucas\AppData\Local\Programs\Python\Launcher\;C:\Users\lucas\.local\bin;C:\Users\lucas\AppData\Local\Programs\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;C:\Users\lucas\AppData\Local\Microsoft\WindowsApps;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;C:\apache-maven-3.9.16\bin;c:\Users\lucas\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="25.0.3+9-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testFormatoHashSHA256" classname="SegurancaServiceJUnitTest" time="0.105">
+    <system-out><![CDATA[
+======================================================================
+  INICIANDO SUITE DE TESTES JUNIT — PROJETO A3
+  Framework: JUnit 4.13.2 + Hamcrest 1.3
+======================================================================
+  ✓ Teste formato hash SHA-256: PASSOU
+]]></system-out>
+  </testcase>
+  <testcase name="testEfeitoAvalanchemudancaValor" classname="SegurancaServiceJUnitTest" time="0.075">
+    <system-out><![CDATA[  ✓ Teste efeito avalanche (valor): PASSOU
+    Bits diferentes: 248/256
+]]></system-out>
+  </testcase>
+  <testcase name="testProcessarPagamento_BoletoAdulterado_Suspeito" classname="SegurancaServiceJUnitTest" time="0.237">
+    <system-out><![CDATA[
+============================================================
+  BANCO — Iniciando processamento do Boleto #6
+  Emissor cadastrado: Energia Elétrica do Nordeste S.A.
+  Valor declarado: R$1,00
+============================================================
+
+  >> ETAPA 1: Verificando integridade do arquivo (SHA-256)...
+  [SegurancaService] Hash original   : 0a72b2a2e640186ef0859d9e321b170cdd85fd72f1c5d74b4e509a2ccb1af7a0
+  [SegurancaService] Hash recalculado: 95de461491870dbf77a6a49f0645237fe4d0aa7a164c11ac8045793f105cc075
+  [SegurancaService] Integridade OK?  : false
+
+  *** [BLOQUEADO - ETAPA 1] ALERTA DE SEGURANÇA: O arquivo do boleto #6 foi ADULTERADO. A assinatura digital não confere com os dados recebidos. Possível intercepção e modificação maliciosa do documento. Status atualizado para: SUSPEITO. Pagamento BARRADO.
+  ✓ Teste detecção adulteração (ETAPA 1): PASSOU
+]]></system-out>
+  </testcase>
+  <testcase name="testValidarIntegridade_EmpresaDiferente_Invalido" classname="SegurancaServiceJUnitTest" time="0.006">
+    <system-out><![CDATA[  [SegurancaService] Hash original   : 94d645380b7435ad53b4b86a466a3182f56796fa1f7a2c7b83000523f0cad836
+  [SegurancaService] Hash recalculado: c55f90054ca4dd56441bacfbee3ab3b669edc3501e875cd00e184ca2668b0a02
+  [SegurancaService] Integridade OK?  : false
+  ✓ Teste validação com empresa diferente: PASSOU
+]]></system-out>
+  </testcase>
+  <testcase name="testProcessarPagamento_BoletoComValorZero" classname="SegurancaServiceJUnitTest" time="0.039">
+    <system-out><![CDATA[
+============================================================
+  BANCO — Iniciando processamento do Boleto #11
+  Emissor cadastrado: Energia Elétrica do Nordeste S.A.
+  Valor declarado: R$0,00
+============================================================
+
+  >> ETAPA 1: Verificando integridade do arquivo (SHA-256)...
+  [SegurancaService] Hash original   : 1d25ff93ffe27b92d5a384a7f361126115488f9b53ae94c6b5c575d26e5c7dce
+  [SegurancaService] Hash recalculado: 1d25ff93ffe27b92d5a384a7f361126115488f9b53ae94c6b5c575d26e5c7dce
+  [SegurancaService] Integridade OK?  : true
+  >> ETAPA 1: APROVADA. Arquivo íntegro — dados não foram adulterados.
+
+  >> ETAPA 2: Verificando correspondência de modalidade e identidade...
+     Tipo no papel     : CNPJ [11111111000000]
+     Tipo conta real    : CNPJ [11111111000000]
+  >> ETAPA 2: APROVADA. Modalidade e identidade conferem.
+
+  *** [APROVADO] Boleto #11 processado com sucesso. Pagamento de R$0,00 autorizado para Empresa [CNPJ: 11111111000000]. Status: PAGO.
+  ✓ Teste valor zero: PASSOU
+]]></system-out>
+  </testcase>
+  <testcase name="testGerarAssinaturaDigitalDeterministico" classname="SegurancaServiceJUnitTest" time="0.003">
+    <system-out><![CDATA[  ✓ Teste determinismo de hash: PASSOU
+]]></system-out>
+  </testcase>
+  <testcase name="testProcessarPagamento_BoletoComValorMuitoGrande" classname="SegurancaServiceJUnitTest" time="0.086">
+    <system-out><![CDATA[
+============================================================
+  BANCO — Iniciando processamento do Boleto #12
+  Emissor cadastrado: Energia Elétrica do Nordeste S.A.
+  Valor declarado: R$999999999,99
+============================================================
+
+  >> ETAPA 1: Verificando integridade do arquivo (SHA-256)...
+  [SegurancaService] Hash original   : 8aa6f2a161267a2920e8e46198d924f01ccd7b0eb116e91011ea624bd3bba976
+  [SegurancaService] Hash recalculado: 8aa6f2a161267a2920e8e46198d924f01ccd7b0eb116e91011ea624bd3bba976
+  [SegurancaService] Integridade OK?  : true
+  >> ETAPA 1: APROVADA. Arquivo íntegro — dados não foram adulterados.
+
+  >> ETAPA 2: Verificando correspondência de modalidade e identidade...
+     Tipo no papel     : CNPJ [22222222000000]
+     Tipo conta real    : CNPJ [22222222000000]
+  >> ETAPA 2: APROVADA. Modalidade e identidade conferem.
+
+  *** [APROVADO] Boleto #12 processado com sucesso. Pagamento de R$999999999,99 autorizado para Empresa [CNPJ: 22222222000000]. Status: PAGO.
+  ✓ Teste valor muito grande: PASSOU
+]]></system-out>
+  </testcase>
+  <testcase name="testProcessarPagamento_FraudemodalidadeCNPJparaCPF_FraudeDetectada" classname="SegurancaServiceJUnitTest" time="0.082">
+    <system-out><![CDATA[
+============================================================
+  BANCO — Iniciando processamento do Boleto #7
+  Emissor cadastrado: Energia Elétrica do Nordeste S.A.
+  Valor declarado: R$157,43
+============================================================
+
+  >> ETAPA 1: Verificando integridade do arquivo (SHA-256)...
+  [SegurancaService] Hash original   : 6bb95e9c86acb0a0a3fe35f51dd9fc7593f4523b7aca011bffe29ac760e99c59
+  [SegurancaService] Hash recalculado: 6bb95e9c86acb0a0a3fe35f51dd9fc7593f4523b7aca011bffe29ac760e99c59
+  [SegurancaService] Integridade OK?  : true
+  >> ETAPA 1: APROVADA. Arquivo íntegro — dados não foram adulterados.
+
+  >> ETAPA 2: Verificando correspondência de modalidade e identidade...
+     Tipo no papel     : CNPJ [12345678000195]
+     Tipo conta real    : CPF [98765432100]
+
+  *** [BLOQUEADO - ETAPA 2] FRAUDE DETECTADA no boleto #7: DESVIO DE FUNDOS CONFIRMADO. Modalidade divergente: papel indica [CNPJ] mas conta real é [CPF]. Documento divergente: papel indica [12345678000195] mas conta real registrada em [98765432100]. O pagamento seria destinado a uma entidade diferente da exibida no documento. Status atualizado para: FRAUDE_MODALIDADE. Pagamento BARRADO.
+  ✓ Teste detecção fraude modalidade (ETAPA 2): PASSOU
+]]></system-out>
+  </testcase>
+  <testcase name="testProcessarPagamento_FraudedocumentosDivergentes_FraudeDetectada" classname="SegurancaServiceJUnitTest" time="0.154">
+    <system-out><![CDATA[
+============================================================
+  BANCO — Iniciando processamento do Boleto #8
+  Emissor cadastrado: Energia Elétrica do Nordeste S.A.
+  Valor declarado: R$100,00
+============================================================
+
+  >> ETAPA 1: Verificando integridade do arquivo (SHA-256)...
+  [SegurancaService] Hash original   : f678366b563f86e4c8cb803a876e570930797eb8917064729a33cdc973237a64
+  [SegurancaService] Hash recalculado: f678366b563f86e4c8cb803a876e570930797eb8917064729a33cdc973237a64
+  [SegurancaService] Integridade OK?  : true
+  >> ETAPA 1: APROVADA. Arquivo íntegro — dados não foram adulterados.
+
+  >> ETAPA 2: Verificando correspondência de modalidade e identidade...
+     Tipo no papel     : CNPJ [12345678000195]
+     Tipo conta real    : CNPJ [98765432000100]
+
+  *** [BLOQUEADO - ETAPA 2] FRAUDE DETECTADA no boleto #8: DESVIO DE FUNDOS CONFIRMADO. Documento divergente: papel indica [12345678000195] mas conta real registrada em [98765432000100]. O pagamento seria destinado a uma entidade diferente da exibida no documento. Status atualizado para: FRAUDE_MODALIDADE. Pagamento BARRADO.
+  ✓ Teste detecção fraude documentos diferentes: PASSOU
+]]></system-out>
+  </testcase>
+  <testcase name="testProcessarPagamento_BoletoLegitimo_Pago" classname="SegurancaServiceJUnitTest" time="0.026">
+    <system-out><![CDATA[
+============================================================
+  BANCO — Iniciando processamento do Boleto #5
+  Emissor cadastrado: Energia Elétrica do Nordeste S.A.
+  Valor declarado: R$157,43
+============================================================
+
+  >> ETAPA 1: Verificando integridade do arquivo (SHA-256)...
+  [SegurancaService] Hash original   : bc722d01bd2c3e6e076d5842a8711ec532657b3a3bad2961bf87addce601347a
+  [SegurancaService] Hash recalculado: bc722d01bd2c3e6e076d5842a8711ec532657b3a3bad2961bf87addce601347a
+  [SegurancaService] Integridade OK?  : true
+  >> ETAPA 1: APROVADA. Arquivo íntegro — dados não foram adulterados.
+
+  >> ETAPA 2: Verificando correspondência de modalidade e identidade...
+     Tipo no papel     : CNPJ [12345678000195]
+     Tipo conta real    : CNPJ [12345678000195]
+  >> ETAPA 2: APROVADA. Modalidade e identidade conferem.
+
+  *** [APROVADO] Boleto #5 processado com sucesso. Pagamento de R$157,43 autorizado para Energia Elétrica do Nordeste S.A. [CNPJ: 12345678000195]. Status: PAGO.
+  ✓ Teste processamento legítimo: PASSOU
+]]></system-out>
+  </testcase>
+  <testcase name="testValidarIntegridadeBoleto_BoletoAdulterado" classname="SegurancaServiceJUnitTest" time="0.003">
+    <system-out><![CDATA[  [SegurancaService] Hash original   : aabebe7c2fa2c64d4e2685d51b2df010b123e922a2c5ebce39420592d9d2d815
+  [SegurancaService] Hash recalculado: 04751aea9ff477d8cb02ae4d6d228acfcc9d3ba33fa437d1c17e0d9420d92003
+  [SegurancaService] Integridade OK?  : false
+  ✓ Teste validação integridade (adulterado): PASSOU
+]]></system-out>
+  </testcase>
+  <testcase name="testProcessarPagamento_PropriedadesBoletoPago" classname="SegurancaServiceJUnitTest" time="0.004">
+    <system-out><![CDATA[
+============================================================
+  BANCO — Iniciando processamento do Boleto #9
+  Emissor cadastrado: Energia Elétrica do Nordeste S.A.
+  Valor declarado: R$999,99
+============================================================
+
+  >> ETAPA 1: Verificando integridade do arquivo (SHA-256)...
+  [SegurancaService] Hash original   : eb9298b26a50ab70d7ed2696a3729d08d60e20dc2a7f0d1eb4fbf9c6a8677085
+  [SegurancaService] Hash recalculado: eb9298b26a50ab70d7ed2696a3729d08d60e20dc2a7f0d1eb4fbf9c6a8677085
+  [SegurancaService] Integridade OK?  : true
+  >> ETAPA 1: APROVADA. Arquivo íntegro — dados não foram adulterados.
+
+  >> ETAPA 2: Verificando correspondência de modalidade e identidade...
+     Tipo no papel     : CNPJ [99999999000100]
+     Tipo conta real    : CNPJ [99999999000100]
+  >> ETAPA 2: APROVADA. Modalidade e identidade conferem.
+
+  *** [APROVADO] Boleto #9 processado com sucesso. Pagamento de R$999,99 autorizado para Concessionária X [CNPJ: 99999999000100]. Status: PAGO.
+  ✓ Teste integridade de propriedades: PASSOU
+]]></system-out>
+  </testcase>
+  <testcase name="testValidarIntegridadeBoleto_BoletoIntegro" classname="SegurancaServiceJUnitTest" time="0.863">
+    <system-out><![CDATA[  [SegurancaService] Hash original   : 1203e169dcb46c2c89ecc0b481407eb53b9e5599852c3f920015cc2177e10169
+  [SegurancaService] Hash recalculado: 1203e169dcb46c2c89ecc0b481407eb53b9e5599852c3f920015cc2177e10169
+  [SegurancaService] Integridade OK?  : true
+  ✓ Teste validação integridade (válido): PASSOU
+]]></system-out>
+  </testcase>
+</testsuite>
