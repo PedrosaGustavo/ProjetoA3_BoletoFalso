@@ -47,11 +47,17 @@
         <!-- JUnit 4 — Framework de testes unitários                  -->
         <!-- ======================================================== -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
+        <groupId>org.hamcrest</groupId>
+         <artifactId>hamcrest</artifactId>
+            <version>2.2</version>
+             <scope>test</scope>
         </dependency>
+        <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+    <scope>test</scope>
+</dependency>
 
         <!-- ======================================================== -->
         <!-- Hamcrest — Matcher library para assertions fluentes      -->

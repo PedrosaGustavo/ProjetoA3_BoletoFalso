@@ -3,7 +3,10 @@ import model.Boleto.Status;
 import model.EmpresaEmissora;
 import controller.BancoController;
 import service.SegurancaService;
-
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.After;
